@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TehnoklinikModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Korisnici_Korisnik">
+    <Key>
+      <PropertyRef Name="IDKorisnik" />
+    </Key>
+    <Property Name="IDKorisnik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv_ustanove" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Laboratorija" Type="varchar" MaxLength="100" />
+    <Property Name="Grad" Type="varchar" MaxLength="50" />
+    <Property Name="Drzava" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Korisnici_Nalog">
+    <Key>
+      <PropertyRef Name="IDRadniNalog" />
+    </Key>
+    <Property Name="IDRadniNalog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sifra" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Predmet" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Redovan_servis" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Korisnici_Ponuda">
+    <Key>
+      <PropertyRef Name="IDPonuda" />
+    </Key>
+    <Property Name="IDPonuda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sifra" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pocetni_datum" Type="date" />
+    <Property Name="Krajnji_datum" Type="date" />
+    <Property Name="Predmet" Type="varchar(max)" />
+    <Property Name="Cena" Type="money" />
+    <Property Name="IDKorisnik" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Korisnici_Racun">
+    <Key>
+      <PropertyRef Name="IDPonuda" />
+    </Key>
+    <Property Name="Sifra" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Cena" Type="money" />
+    <Property Name="Sifra_radnog_naloga" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IDPonuda" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Korisnici_Ugovor">
+    <Key>
+      <PropertyRef Name="IDUgovor" />
+    </Key>
+    <Property Name="IDUgovor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sifra" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Predmet" Type="varchar" MaxLength="250" />
+    <Property Name="Pocetni_datum" Type="date" Nullable="false" />
+    <Property Name="Krajnji_datum" Type="date" Nullable="false" />
+    <Property Name="Aktivan" Type="bit" Nullable="false" />
+    <Property Name="IDKorisnik" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login_Korisnik">
+    <Key>
+      <PropertyRef Name="IDLogKorisnik" />
+    </Key>
+    <Property Name="IDLogKorisnik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ime" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Prezime" Type="varchar" MaxLength="50" />
+    <Property Name="Uloga" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Korisnicko_ime" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Lozinka" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Lozinka_ponovo" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login_Login">
+    <Key>
+      <PropertyRef Name="IDLogin" />
+    </Key>
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDLogin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Servis_Invertar">
+    <Key>
+      <PropertyRef Name="IDInvertar" />
+    </Key>
+    <Property Name="IDInvertar" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sifra" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Delovi" Type="varchar" MaxLength="50" />
+    <Property Name="Kolicina" Type="int" Nullable="false" />
+    <Property Name="Na_stanju" Type="bit" Nullable="false" />
+    <Property Name="Cena" Type="money" />
+  </EntityType>
+  <EntityType Name="Servis_Uredjaj">
+    <Key>
+      <PropertyRef Name="IDUredjaj" />
+    </Key>
+    <Property Name="IDUredjaj" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sifra" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tip" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Opis" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Servis_UredjajInvertar">
+    <Key>
+      <PropertyRef Name="IDUredjaj" />
+      <PropertyRef Name="IDInvertar" />
+    </Key>
+    <Property Name="IDUredjaj" Type="int" Nullable="false" />
+    <Property Name="IDInvertar" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UredjajKorisnik">
+    <Key>
+      <PropertyRef Name="IDUredjaj" />
+      <PropertyRef Name="IDKorisnik" />
+    </Key>
+    <Property Name="IDUredjaj" Type="int" Nullable="false" />
+    <Property Name="IDKorisnik" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Korisnici_Ponuda_Korisnici_Korisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="1" />
+    <End Role="Korisnici_Ponuda" Type="Self.Korisnici_Ponuda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Korisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Principal>
+      <Dependent Role="Korisnici_Ponuda">
+        <PropertyRef Name="IDKorisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Korisnici_Racun_Korisnici_Ponuda">
+    <End Role="Korisnici_Ponuda" Type="Self.Korisnici_Ponuda" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Korisnici_Racun" Type="Self.Korisnici_Racun" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Ponuda">
+        <PropertyRef Name="IDPonuda" />
+      </Principal>
+      <Dependent Role="Korisnici_Racun">
+        <PropertyRef Name="IDPonuda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Korisnici_Ugovor_Korisnici_Korisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Korisnici_Ugovor" Type="Self.Korisnici_Ugovor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Korisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Principal>
+      <Dependent Role="Korisnici_Ugovor">
+        <PropertyRef Name="IDKorisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servis_UredjajInvertar_Servis_Invertar">
+    <End Role="Servis_Invertar" Type="Self.Servis_Invertar" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Servis_UredjajInvertar" Type="Self.Servis_UredjajInvertar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis_Invertar">
+        <PropertyRef Name="IDInvertar" />
+      </Principal>
+      <Dependent Role="Servis_UredjajInvertar">
+        <PropertyRef Name="IDInvertar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servis_UredjajInvertar_Servis_Uredjaj">
+    <End Role="Servis_Uredjaj" Type="Self.Servis_Uredjaj" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Servis_UredjajInvertar" Type="Self.Servis_UredjajInvertar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis_Uredjaj">
+        <PropertyRef Name="IDUredjaj" />
+      </Principal>
+      <Dependent Role="Servis_UredjajInvertar">
+        <PropertyRef Name="IDUredjaj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UredjajKorisnik_Korisnici_Korisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="1" />
+    <End Role="UredjajKorisnik" Type="Self.UredjajKorisnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Korisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Principal>
+      <Dependent Role="UredjajKorisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UredjajKorisnik_Servis_Uredjaj">
+    <End Role="Servis_Uredjaj" Type="Self.Servis_Uredjaj" Multiplicity="1" />
+    <End Role="UredjajKorisnik" Type="Self.UredjajKorisnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis_Uredjaj">
+        <PropertyRef Name="IDUredjaj" />
+      </Principal>
+      <Dependent Role="UredjajKorisnik">
+        <PropertyRef Name="IDUredjaj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TehnoklinikModelStoreContainer">
+    <EntitySet Name="Korisnici_Korisnik" EntityType="Self.Korisnici_Korisnik" Schema="dbo" Table="Korisnici.Korisnik" store:Type="Tables" />
+    <EntitySet Name="Korisnici_Nalog" EntityType="Self.Korisnici_Nalog" Schema="dbo" Table="Korisnici.Nalog" store:Type="Tables" />
+    <EntitySet Name="Korisnici_Ponuda" EntityType="Self.Korisnici_Ponuda" Schema="dbo" Table="Korisnici.Ponuda" store:Type="Tables" />
+    <EntitySet Name="Korisnici_Racun" EntityType="Self.Korisnici_Racun" Schema="dbo" Table="Korisnici.Racun" store:Type="Tables" />
+    <EntitySet Name="Korisnici_Ugovor" EntityType="Self.Korisnici_Ugovor" Schema="dbo" Table="Korisnici.Ugovor" store:Type="Tables" />
+    <EntitySet Name="Login_Korisnik" EntityType="Self.Login_Korisnik" Schema="dbo" Table="Login.Korisnik" store:Type="Tables" />
+    <EntitySet Name="Login_Login" EntityType="Self.Login_Login" Schema="dbo" Table="Login.Login" store:Type="Tables" />
+    <EntitySet Name="Servis_Invertar" EntityType="Self.Servis_Invertar" Schema="dbo" Table="Servis.Invertar" store:Type="Tables" />
+    <EntitySet Name="Servis_Uredjaj" EntityType="Self.Servis_Uredjaj" Schema="dbo" Table="Servis.Uredjaj" store:Type="Tables" />
+    <EntitySet Name="Servis_UredjajInvertar" EntityType="Self.Servis_UredjajInvertar" Schema="dbo" Table="Servis.UredjajInvertar" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UredjajKorisnik" EntityType="Self.UredjajKorisnik" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Korisnici_Ponuda_Korisnici_Korisnik" Association="Self.FK_Korisnici_Ponuda_Korisnici_Korisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="Korisnici_Ponuda" EntitySet="Korisnici_Ponuda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Korisnici_Racun_Korisnici_Ponuda" Association="Self.FK_Korisnici_Racun_Korisnici_Ponuda">
+      <End Role="Korisnici_Ponuda" EntitySet="Korisnici_Ponuda" />
+      <End Role="Korisnici_Racun" EntitySet="Korisnici_Racun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Korisnici_Ugovor_Korisnici_Korisnik" Association="Self.FK_Korisnici_Ugovor_Korisnici_Korisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="Korisnici_Ugovor" EntitySet="Korisnici_Ugovor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servis_UredjajInvertar_Servis_Invertar" Association="Self.FK_Servis_UredjajInvertar_Servis_Invertar">
+      <End Role="Servis_Invertar" EntitySet="Servis_Invertar" />
+      <End Role="Servis_UredjajInvertar" EntitySet="Servis_UredjajInvertar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servis_UredjajInvertar_Servis_Uredjaj" Association="Self.FK_Servis_UredjajInvertar_Servis_Uredjaj">
+      <End Role="Servis_Uredjaj" EntitySet="Servis_Uredjaj" />
+      <End Role="Servis_UredjajInvertar" EntitySet="Servis_UredjajInvertar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UredjajKorisnik_Korisnici_Korisnik" Association="Self.FK_UredjajKorisnik_Korisnici_Korisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="UredjajKorisnik" EntitySet="UredjajKorisnik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UredjajKorisnik_Servis_Uredjaj" Association="Self.FK_UredjajKorisnik_Servis_Uredjaj">
+      <End Role="Servis_Uredjaj" EntitySet="Servis_Uredjaj" />
+      <End Role="UredjajKorisnik" EntitySet="UredjajKorisnik" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

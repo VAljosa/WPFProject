@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Delovis" EntityType="DataModel.Delovi" />
+    <EntitySet Name="Uredjajs" EntityType="DataModel.Uredjaj" />
+    <EntitySet Name="Korisniks" EntityType="DataModel.Korisnik" />
+    <EntitySet Name="Grads" EntityType="DataModel.Grad" />
+    <EntitySet Name="Drzavas" EntityType="DataModel.Drzava" />
+    <EntitySet Name="Ugovors" EntityType="DataModel.Ugovor" />
+    <EntitySet Name="Odeljenjes" EntityType="DataModel.Odeljenje" />
+    <EntitySet Name="Uplatas" EntityType="DataModel.Uplata" />
+  </EntityContainer>
+  <EntityType Name="Delovi">
+    <Key>
+      <PropertyRef Name="DeloviId" />
+    </Key>
+    <Property Name="DeloviId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naziv" Type="String" Nullable="false" />
+    <Property Name="Kolicina" Type="String" Nullable="false" />
+    <Property Name="Dostupnost" Type="String" Nullable="false" />
+    <Property Name="Cena" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Uredjaj">
+    <Key>
+      <PropertyRef Name="UredjajId" />
+    </Key>
+    <Property Name="UredjajId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tip" Type="String" Nullable="false" />
+    <Property Name="Naziv" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Korisnik">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ime" Type="String" Nullable="false" />
+    <Property Name="Adresa" Type="String" Nullable="false" />
+    <Property Name="Telefon" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naziv" Type="String" Nullable="false" />
+    <Property Name="Property1" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Drzava">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Ugovor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Odeljenje">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Uplata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

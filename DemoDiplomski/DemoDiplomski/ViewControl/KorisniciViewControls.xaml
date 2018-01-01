@@ -1,0 +1,255 @@
+﻿<UserControl x:Class="DemoDiplomski.ViewControl.KorisniciViewControls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+             xmlns:local="clr-namespace:DemoDiplomski.ViewControl"
+             xmlns:e2c="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:vm="clr-namespace:DemoDiplomski.ViewModel"
+             xmlns:vmm="clr-namespace:DemoDiplomski.ViewModel.ModelVM"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:Model="clr-namespace:DemoDiplomski.Model"
+             xmlns:Utility="clr-namespace:DemoDiplomski.Utility"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="0,20,0,20"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="10,0,20,0"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="30"/>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="Margin" Value="10,0,0,0"/>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+            <DockPanel Grid.Row="0" Margin="5,0,0,0">
+                <TextBlock DockPanel.Dock="Left"  Text="Dostavnica"/>
+                <Separator DockPanel.Dock="Right" Margin="5,5,0,0"/>
+            </DockPanel>
+            <StackPanel Grid.Row="1" Margin="0,20,0,0">
+                <Label Content="Broj dostavnice: " />
+                <ComboBox x:Name="cbDostavnicaBroj"
+                          IsEditable="True"
+                          ItemsSource="{Binding Dostavnice}"
+                          SelectedItem="{Binding DostavnicaFilterBrDostavnica}"
+                          DisplayMemberPath="Model.BrDostavnica"
+                          />
+                <Label Content="Grad: " Margin="35,0,10,0"/>
+                <ComboBox x:Name="cbDostavnicaGodina"
+                          IsEditable="True"
+                          Margin="10,0,0,0"
+                          ItemsSource="{Binding Dostavnice}"
+                          SelectedItem="{Binding DostavnicaFilterGrad}"
+                          DisplayMemberPath="Model.Korisnik.Grad"
+                          />
+                <Button x:Name="btnDostavnicaPretraga" ToolTip="Pretraži" Command="{Binding FiltrirajDostavnica}">
+                    <DockPanel>
+                        <Image Source="/DemoDiplomski;component/Resources/icons/ok2.png"/>
+                    </DockPanel>
+                </Button>
+                <!--<Button Content="Poništi" Command="{Binding PonistiFilterRadniNalog}"/>-->
+            </StackPanel>
+        <DataGrid Grid.Row="2"
+                  ColumnWidth="Auto"
+                  x:Name="dgDostavnice"
+                  Margin="10,20,0,0"
+                  IsSynchronizedWithCurrentItem="True"
+                  ItemsSource="{Binding Dostavnice}"
+                  SelectedItem="{Binding SelektovanaDostavnica}"
+                  HeadersVisibility="Column"
+                  AlternatingRowBackground="Azure"
+                  ScrollViewer.CanContentScroll="True"
+                  ScrollViewer.IsDeferredScrollingEnabled="True"
+                  AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Model.BrDostavnica, Mode=TwoWay}" Header="Broj dostavnice" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Datum, StringFormat='{}{0:dd/MM/yyyy}',Mode=TwoWay}" Header="Datum" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.NazivUstanove, Mode=TwoWay}" Header="Naziv ustanove" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PIB, Mode=TwoWay}" Header="PIB" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Laboratorija, Mode=TwoWay}" Header="Odeljenje" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Telefon, Mode=TwoWay}" Header="Telefon" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Adresa, Mode=TwoWay}" Header="Adresa" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PostanskiBroj, Mode=TwoWay}" Header="Poštanski broj" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Grad, Mode=TwoWay}" Header="Grad" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Drzava, Mode=TwoWay}" Header="Država" Width="Auto"/>
+                    <!--<DataGridTextColumn Binding="{Binding Uredjaj_U.NazivUredjaja, Mode=TwoWay}" Header="Naziv uredjaja" Width="Auto"/>-->
+                    <!--<DataGridTemplateColumn Header="Naziv uredjaja" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ItemsControl ItemsSource="{Binding Model.Uredjaji}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>-->
+                </DataGrid.Columns>
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Kreiraj dokument"  Command="{Binding DostavnicaMerge}">
+                            <MenuItem.Icon>
+                                <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/word.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+            <DockPanel Grid.Row="3" Margin="5,30,0,0">
+                <TextBlock DockPanel.Dock="Left"  Text="Revers"/>
+                <Separator DockPanel.Dock="Right" Margin="5,5,0,0"/>
+            </DockPanel>
+        <StackPanel Grid.Row="4">
+                <Label Content="Broj reversa: "/>
+                <ComboBox x:Name="cbReversBroj" 
+                          IsEditable="True"                          
+                          Margin="20,0,0,0"
+                          ItemsSource="{Binding Reversi}"
+                          SelectedItem="{Binding ReversFilterBrRevers}"
+                          DisplayMemberPath="Model.BrRevers"/>
+                <Label Content="Grad: " Margin="35,0,-10,0"/>
+                <ComboBox x:Name="cbReversGodina" 
+                          IsEditable="True"
+                          Margin="30,0,0,0"
+                          ItemsSource="{Binding Reversi}"
+                          SelectedItem="{Binding ReversFilterGrad}"
+                          DisplayMemberPath="Model.Korisnik.Grad"/>
+                <Button x:Name="btnReversPretraga" ToolTip="Pretraži" Command="{Binding FiltrirajRevers}">
+                    <DockPanel>
+                        <Image Source="/DemoDiplomski;component/Resources/icons/ok2.png"/>
+                    </DockPanel>
+                </Button>
+        </StackPanel>
+            <DataGrid Grid.Row="5"
+                      ColumnWidth="Auto"
+                      Width="Auto"
+                      x:Name="dgRevers"
+                      HeadersVisibility="Column"
+                      SelectionMode="Single"
+                      IsSynchronizedWithCurrentItem="True"
+                      RowDetailsVisibilityMode="VisibleWhenSelected"
+                      AlternatingRowBackground="Azure"
+                      ItemsSource="{Binding Reversi}"
+                      SelectedItem="{Binding SelektovaniRevers}"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Model.BrRevers, Mode=TwoWay}" Header="Broj reversa" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Datum, StringFormat='{}{0:dd/MM/yyyy}', Mode=TwoWay}" Header="Datum" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.NazivUstanove, Mode=TwoWay}" Header="Naziv ustanove" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PIB, Mode=TwoWay}" Header="PIB" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Laboratorija, Mode=TwoWay}" Header="Odeljenje" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Telefon, Mode=TwoWay}" Header="Telefon" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Adresa, Mode=TwoWay}" Header="Adresa" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PostanskiBroj, Mode=TwoWay}" Header="Poštanski broj" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Grad, Mode=TwoWay}" Header="Grad" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Drzava, Mode=TwoWay}" Header="Država" Width="Auto"/>
+                </DataGrid.Columns>
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Kreiraj dokument"  Command="{Binding ReversMerge}">
+                            <MenuItem.Icon>
+                                <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/word.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+            <DockPanel Grid.Row="6" Margin="5,30,0,0">
+                <TextBlock DockPanel.Dock="Left"  Text="Nalog"/>
+                <Separator DockPanel.Dock="Right" Margin="5,5,0,0"/>
+            </DockPanel>
+            <StackPanel Grid.Row="7">
+                <Label Content="Broj naloga: "/>
+                <ComboBox x:Name="cbNalogBroj" 
+                          IsEditable="True"
+                          Margin="20,0,0,0"
+                          ItemsSource="{Binding RadniNalozi}"
+                          DisplayMemberPath="Model.BrRadNalog"
+                          SelectedItem="{Binding NaloziFilterBrNalog}"
+                          />
+                <Label Content="Vrsta servisa: " Margin="5,0,0,0"/>
+                <ComboBox x:Name="cbNalogServis" 
+                          IsEditable="True"
+                          Margin="10,0,0,0"
+                          ItemsSource="{Binding RadniNalozi}"
+                          SelectedItem="{Binding ServisFilter}"
+                          DisplayMemberPath="Model.Komentar"/>
+                <Button x:Name="btnNalogPretraga" ToolTip="Pretraži" Command="{Binding FiltrirajNalog}">
+                    <DockPanel>
+                        <Image Source="/DemoDiplomski;component/Resources/icons/ok2.png"/>
+                    </DockPanel>
+                </Button>
+        </StackPanel>
+            <DataGrid Grid.Row="8"
+                      ColumnWidth="Auto"
+                      Width="Auto"
+                      x:Name="dgRedovanServis"
+                      IsSynchronizedWithCurrentItem="True"  
+                      AlternatingRowBackground="Azure"
+                      ItemsSource="{Binding RadniNalozi}"
+                      SelectedItem="{Binding SelektovaniNalog}"
+                      HeadersVisibility="Column"
+                      SelectionMode="Single"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn  Binding="{Binding Model.BrRadNalog, Mode=TwoWay}" Header="Broj radnog naloga" Width="Auto"/>
+                    <DataGridTextColumn  Binding="{Binding Model.Komentar, Mode=TwoWay}" Header="Vrsta servisa" Width="Auto"/>
+                    <DataGridTextColumn  Binding="{Binding Model.Datum, StringFormat='{}{0:dd/MM/yyyy}', Mode=TwoWay}" Header="Datum" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.NazivUstanove, Mode=TwoWay}" Header="Naziv ustanove" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PIB, Mode=TwoWay}" Header="PIB" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Laboratorija, Mode=TwoWay}" Header="Odeljenje" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Telefon, Mode=TwoWay}" Header="Telefon" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Adresa, Mode=TwoWay}" Header="Adresa" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.PostanskiBroj, Mode=TwoWay}" Header="Poštanski broj" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Grad, Mode=TwoWay}" Header="Grad" Width="Auto"/>
+                    <DataGridTextColumn Binding="{Binding Model.Korisnik.Drzava, Mode=TwoWay}" Header="Država" Width="Auto"/>
+                </DataGrid.Columns>
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Kreiraj dokument"   Command="{Binding RadniNalogMerge}">
+                            <MenuItem.Icon>
+                                <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/word.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,460 @@
+﻿<Window x:Class="DemoDiplomski.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalon="http://schemas.xceed.com/wpf/xaml/avalondock"   
+        xmlns:model="clr-namespace:DemoDiplomski.Model"
+        xmlns:utility="clr-namespace:DemoDiplomski.ViewModel"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        xmlns:vm="clr-namespace:DemoDiplomski.ViewModel"
+        xmlns:vc="clr-namespace:DemoDiplomski.ViewControl"
+         xmlns:Utility="clr-namespace:DemoDiplomski.Utility"
+        xmlns:vcdzu="clr-namespace:DemoDiplomski.ViewControl.DijaloziZaUnos"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:local ="clr-namespace:DemoDiplomski"
+        xmlns:r="Resource"
+        Title="Servis" Height="600" Width="800"
+        Loaded="LoginDialog_Loaded">
+    <Window.Resources>
+        <Storyboard x:Key="FadeEfekatPoruke">
+            <DoubleAnimation
+                Storyboard.TargetName="UIPoruka"
+                Storyboard.TargetProperty="(TextBlock.Opacity)"
+                From="1" To="0" Duration="0:0:7"/>
+        </Storyboard>
+        <DataTemplate DataType="{x:Type vm:KorisnikUCViewModel}">
+            <vc:KorisniciViewControls/>
+        </DataTemplate>
+        <DataTemplate  DataType="{x:Type vm:UredjajUCViewModel}">
+            <vc:UredjajViewControls/>
+        </DataTemplate>
+        <DataTemplate  DataType="{x:Type vm:DeloviUCViewModel}">
+            <vc:DeloviViewDataGridControl/>
+        </DataTemplate>
+        <vm:KorisnikUCViewModel x:Key="korisnikUCViewModel" />
+        <Style TargetType="{x:Type Button}">
+            <!--Button style-->
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+        <ControlTemplate TargetType="Frame" x:Key="template">
+            <DockPanel>
+                <StackPanel
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal"
+                    DockPanel.Dock="Top">
+                    <Button x:Name="btnPrethodni"                            
+                            Click="btnPrethodni_Click" 
+                            IsEnabled="{TemplateBinding CanGoBack}"
+                            ToolTip="Nazad"                                
+                            Height="35" Width="35">
+                        <StackPanel>
+                            <Image Source="/DemoDiplomski;component/Resources/icons/backward-icon.png"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btnSledeci" 
+                            Click="btnSledeci_Click" 
+                            IsEnabled="{TemplateBinding CanGoForward}"
+                            ToolTip="Napred" 
+                            Margin="3,0,0,0"  
+                            Height="35" Width="35">
+                        <StackPanel>
+                            <Image Source="/DemoDiplomski;component/Resources/icons/forward-icon.png"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <ContentPresenter DockPanel.Dock="Bottom"/>
+            </DockPanel>
+        </ControlTemplate>
+        <BitmapImage x:Key="logoSource" UriSource="/DemoDiplomski;component/Resources/image/logo.png" BaseUri="/DemoDiplomski;component/Resources/image/logo.png"/>
+        <Style TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border x:Name="Border" BorderThickness="1,1,1,0" BorderBrush="Black" CornerRadius="5,5,0,0" Margin="2,0">
+                            <ContentPresenter x:Name="Sadrzaj"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"
+                                              ContentSource="Header"
+                                              Margin="10,2"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="LightBlue"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="GhostWhite"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="grdRoditelj">
+    <Grid x:Name="grdMainGrid" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="2" x:Name="mMeni">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Left"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="_Projekat">
+                    <MenuItem Header="_Novi unos" Click="Button_Click">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/dodaj0.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Otvori" Command="{Binding Otvori}">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/open4.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Sačuvaj">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/save_menu.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Izađi" Click="ZatvaranjeAplikacije_Click">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/exit2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Alati">
+                    <MenuItem x:Name="menuAlati" Header="Podešavanja..."  Click="menuAlati_Click">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/settings_grey.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="menuKreiranjeNaloga" Header="Kreiranje naloga" Click="Nalog_Click">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/avatar1.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Pomoć">
+                    <MenuItem Header="Dokumentacija" Command="{Binding PrikazDokumentacije}">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/orange_help.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="O Servis aplikaciji" Click="OEditoru_Click" Command="{Binding OEditoru}">
+                        <MenuItem.Icon>
+                            <Image Width="21" Height="21" Source="/DemoDiplomski;component/Resources/icons/info.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+            </MenuItem>
+        </Menu>
+            <ToolBarTray x:Name="tbtToolBarTray" Grid.Row="1" ToolBarTray.IsLocked="False" HorizontalAlignment="Stretch">
+                <ToolBar x:Name="tbToolBar0" HorizontalAlignment="Left" ToolBar.OverflowMode="Always">
+                        <Button x:Name="btnPrethodni"                            
+                            Click="btnPrethodniTab_Click"
+                            ToolTip="Nazad"                                
+                            Height="35" Width="35">
+                            <StackPanel>
+                                <Image Source="/DemoDiplomski;component/Resources/icons/backward-icon.png"/>
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnSledeci" 
+                            Click="btnSledeciTab_Click"
+                            ToolTip="Napred" 
+                            Margin="3,0,0,0"  
+                            Height="35" Width="35">
+                            <StackPanel>
+                                <Image Source="/DemoDiplomski;component/Resources/icons/forward-icon.png"/>
+                            </StackPanel>
+                        </Button>
+                    <Separator Margin="5,0,0,0"/>
+                    <Button Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image ToolTip="Unesi" Source="/DemoDiplomski;component/Resources/icons/add6.png" Width="35" Height="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Right" Command="{Binding Osvezi_Podatke}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image ToolTip="Osveži" Source="/DemoDiplomski;component/Resources/icons/refresh.png" Width="30" Height="30"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Right" Command="{Binding Otvori}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image ToolTip="Otvori" Source="/DemoDiplomski;component/Resources/icons/open.png" Width="30" Height="30"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Command="{Binding Sacuvaj}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image ToolTip="Sačuvaj" Source="/DemoDiplomski;component/Resources/icons/save.png" Margin="0,3,3,0" Width="30" Height="30"/>
+                        </StackPanel>
+                    </Button>
+                </ToolBar>
+                <ToolBar HorizontalAlignment="Stretch" ToolBar.OverflowMode="Always">
+                    <StackPanel Orientation="Horizontal" Height="40">
+                    </StackPanel>
+                    <Separator Margin="10,0,10,0"/>
+                    <Button x:Name="btnOEditoru" ToolTip="O servis aplikaciji" Height="35" Width="35"  Click="OEditoru_Click">
+                        <StackPanel>
+                            <Image Source="/DemoDiplomski;component/Resources/icons/info.png" />
+                        </StackPanel>
+                    </Button>
+                </ToolBar>
+        </ToolBarTray>
+            <TextBlock x:Name="UIPoruka" 
+                       Grid.Row="1"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Right"
+                       Margin="0,0,20,0"
+                       Foreground="Red" 
+                       FontWeight="Bold" FontSize="12" Text=""/>
+            <avalon:DockingManager x:Name="DockingManager" Grid.Row="2" RenderTransformOrigin="0.504,0.499">
+            <avalon:LayoutRoot>
+                <avalon:LayoutPanel>
+                    <avalon:LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="1*">
+                        <avalon:LayoutAnchorablePane DockHeight="2*">
+                            <avalon:LayoutAnchorable  x:Name="Editor" AutoHideWidth="250">
+                                <TabControl MinWidth="250" Margin="0,10,0,0" x:Name="tabControl">
+                                    <TabItem Header="Korisnici" Foreground="Blue" FontWeight="Bold" Background="Azure">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                                 <i:InvokeCommandAction Command="{Binding UcKorisnikTab}"/>
+                                            </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                            <StackPanel Orientation="Vertical">
+                                                <ListView x:Name="lstKorisnik"  
+                                                  IsSynchronizedWithCurrentItem="True"
+                                                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                  ScrollViewer.CanContentScroll="True"
+                                                  ScrollViewer.IsDeferredScrollingEnabled="True"
+                                                  SelectionMode="Single"
+                                                  ItemsSource="{Binding KorisnikViewModelUC.KorisniciKolekcija}"
+                                                  SelectedItem="{Binding KorisnikViewModelUC.SelektovaniKorisnik}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Naziv ustanove" DisplayMemberBinding="{Binding Model.NazivUstanove}" />
+                                                            <GridViewColumn Header="Odeljenje" DisplayMemberBinding="{Binding Model.Laboratorija}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                    <ListView.ContextMenu>
+                                                        <ContextMenu>
+                                                            <MenuItem Header="Dodaj novog korisnika" Click="DodajKorisnika_Click" Command="{Binding KorisnikViewModelUC.DodajAzurirajK}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/dodaj0.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Ažuriraj postojećeg korisnika" Click="AzurirajKorisnika_Click_" Command="{Binding KorisnikViewModelUC.DodajAzurirajK}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="22" Width="22" Source="/DemoDiplomski;component/Resources/icons/edit-icon.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Izbriši" 
+                                                                  Command="{Binding KorisnikViewModelUC.Izbrisi}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/delete1.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                        </ContextMenu>
+                                                    </ListView.ContextMenu>
+                                                </ListView>
+                                                <ListView x:Name="lstDostavnice"
+                                                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                          ItemsSource="{Binding ElementName=lstKorisnik, Path=SelectedItem.Model.Dostavnice}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Broj dostavnice" DisplayMemberBinding="{Binding BrDostavnica}" />
+                                                            <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                                <ListView x:Name="lstReversi"
+                                                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                          ItemsSource="{Binding ElementName=lstKorisnik, Path=SelectedItem.Model.Reversi}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Broj reversa" DisplayMemberBinding="{Binding BrRevers}" />
+                                                            <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                                <ListView x:Name="lstRadniNalozi"
+                                                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                          ItemsSource="{Binding ElementName=lstKorisnik, Path=SelectedItem.Model.Nalozi}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Broj radnog naloga" DisplayMemberBinding="{Binding BrRadNalog}" />
+                                                            <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                                                            <GridViewColumn Header="Servis" DisplayMemberBinding="{Binding Komentar}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                                <ListView x:Name="lstUredjaji"
+                                                          ScrollViewer.CanContentScroll="True"
+                                                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                          ScrollViewer.IsDeferredScrollingEnabled="True"
+                                                          ItemsSource="{Binding ElementName=lstKorisnik, Path=SelectedItem.Model.Uredjaji}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Serijski broj" DisplayMemberBinding="{Binding S_N}" />
+                                                            <GridViewColumn Header="Tip" DisplayMemberBinding="{Binding Tip}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                            </StackPanel>
+                                        </TabItem>
+                                    <TabItem Header="Uređaji" Foreground="Red" FontWeight="Bold"  Background="Azure">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                                <i:InvokeCommandAction Command="{Binding UcUredjajTab}"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                            <StackPanel Orientation="Vertical">
+                                                <ListView x:Name="lstUredjaj" 
+                                                  IsSynchronizedWithCurrentItem="True"
+                                                  SelectionMode="Single"
+                                                  ItemsSource="{Binding UredjajViewModelUC.UredjajiKolekcija}"
+                                                  SelectedItem="{Binding UredjajViewModelUC.SelektovaniUredjaj, Mode=TwoWay}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Serijski broj" DisplayMemberBinding="{Binding Model.S_N}"/>
+                                                            <GridViewColumn Header="Tip uredjaja" DisplayMemberBinding="{Binding Model.Tip}"/>
+                                                            <GridViewColumn Header="Detalji" DisplayMemberBinding="{Binding Model.Detalji}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                    <ListView.ContextMenu>
+                                                        <ContextMenu>
+                                                            <MenuItem Header="Dodaj novi uređaj" Click="DodajUredjaj_Click" Command="{Binding UredjajViewModelUC.DodajUredjaj}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/dodaj0.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Ažuriraj postojeći uređaj" Click="AzurirajUredjaj_Click" Command="{Binding UredjajViewModelUC.AzurirajU}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="22" Width="22" Source="/DemoDiplomski;component/Resources/icons/edit-icon.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Izbriši uređaj" Command="{Binding UredjajViewModelUC.IzbrisiU}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/delete1.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                        </ContextMenu>
+                                                    </ListView.ContextMenu>
+                                                </ListView>
+                                                <ListView x:Name="lstVandresniServisi"
+                                                          ItemsSource="{Binding ElementName=lstUredjaj, Path=SelectedItem.Model.VandredniServisi}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Datum servisa" DisplayMemberBinding="{Binding DatumServisa, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                                                            <GridViewColumn Header="Broj naloga" DisplayMemberBinding="{Binding Nalog.BrRadNalog}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                                <ListView x:Name="lstRedovniServisi"
+                                                          ItemsSource="{Binding ElementName=lstUredjaj, Path=SelectedItem.Model.RedovniServisi}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Datum servisa" DisplayMemberBinding="{Binding DatumServisa, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                                                            <GridViewColumn Header="Datum sledećeg servisa" DisplayMemberBinding="{Binding DatumSledecegServisa, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                                                            <GridViewColumn Header="Broj naloga" DisplayMemberBinding="{Binding Nalog.BrRadNalog}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                            </StackPanel>
+                                    </TabItem>
+                                    <TabItem Header="Inventar" Foreground="Green" FontWeight="Bold" Background="Azure">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                                <i:InvokeCommandAction Command="{Binding UcInventarTab}"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                            <StackPanel Orientation="Vertical">
+                                                <ListView x:Name="lstInventar"  
+                                                  IsSynchronizedWithCurrentItem="True"
+                                                  SelectionMode="Single"
+                                                  ItemsSource="{Binding DeoViewModelUC.DeloviKolekcija}"
+                                                  SelectedItem="{Binding DeoViewModelUC.SelektovaniDeo, Mode=TwoWay}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Kataloski broj" DisplayMemberBinding="{Binding Model.K_Broj}" />
+                                                            <GridViewColumn Header="Naziv" DisplayMemberBinding="{Binding Model.Naziv}"/>
+                                                            <GridViewColumn Header="Na stanju" DisplayMemberBinding="{Binding Model.NaStanju}"/>
+                                                            <GridViewColumn Header="Kolicina" DisplayMemberBinding="{Binding Model.Kolicina}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                    <ListView.ContextMenu>
+                                                        <ContextMenu>
+                                                            <MenuItem Header="Unesi nov deo" Click="DodajDelove_Click" Command="{Binding DeoViewModelUC.DodajDeo}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/dodaj0.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Ažuriraj postojeći deo" Click="AzurirajInventar_Click" Command="{Binding DeoViewModelUC.AzurirajD}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="22" Width="22" Source="/DemoDiplomski;component/Resources/icons/edit-icon.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                            <MenuItem Header="Izbriši deo" Command="{Binding DeoViewModelUC.IzbrisiD}">
+                                                                <MenuItem.Icon>
+                                                                    <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/delete1.png"/>
+                                                                </MenuItem.Icon>
+                                                            </MenuItem>
+                                                        </ContextMenu>
+                                                    </ListView.ContextMenu>
+                                                </ListView>
+                                                <ListView x:Name="lstUredjajiInventar"
+                                                          ItemsSource="{Binding ElementName=lstInventar, Path=SelectedItem.Model.Uredjaji}">
+                                                    <ListView.View>
+                                                        <GridView>
+                                                            <GridViewColumn Header="Broj uredjaja" DisplayMemberBinding="{Binding S_N}" />
+                                                            <GridViewColumn Header="Tip" DisplayMemberBinding="{Binding Tip}"/>
+                                                        </GridView>
+                                                    </ListView.View>
+                                                </ListView>
+                                            </StackPanel>
+                                    </TabItem>
+                                </TabControl>
+                            </avalon:LayoutAnchorable>
+                        </avalon:LayoutAnchorablePane>
+                    </avalon:LayoutAnchorablePaneGroup>
+                    <avalon:LayoutAnchorablePaneGroup DockWidth="2*">
+                        <avalon:LayoutAnchorablePane>
+                            <avalon:LayoutAnchorable>
+                                    <Frame x:Name="ccEditor" 
+                                       NavigationUIVisibility="Hidden" 
+                                       Grid.Row="0" Grid.Column="1" 
+                                       Grid.ColumnSpan="4" Grid.RowSpan="5"
+                                       Template="{StaticResource template}"
+                                       Content="{Binding TekuciUC}"/>
+                            </avalon:LayoutAnchorable>
+                        </avalon:LayoutAnchorablePane>
+                    </avalon:LayoutAnchorablePaneGroup>
+                </avalon:LayoutPanel>
+            </avalon:LayoutRoot>
+        </avalon:DockingManager>
+        <StatusBar Grid.Row="3" >
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="0">
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="2" HorizontalAlignment="Right">
+                <TextBlock Text="Redovan servis" Width="Auto"  Background="Green"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+    </Grid>
+</Window>

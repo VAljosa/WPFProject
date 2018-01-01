@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DemoDiplomski.App" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Model.Deo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAICBAgAgAAAZMCCAkAAgABgEQAAAAAIAIAACAAAAA=</HashCode>
+      <FileName>Model\Deo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.Dostavnica" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgIAAAQKIAACAEAAAQgQACAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Model\Dostavnica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.Korisnik" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEACgAgAAIAAZMICBgACAAQgExAAQQIQAIgAICBEAA=</HashCode>
+      <FileName>Model\Korisnik.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.LogKorisnik" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEwAKABEKCgAAAgAAAAwAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\LogKorisnik.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.Nalog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICAAgIAAAAIKAACAAAAAQgAACACABAgAAAAAAEAg=</HashCode>
+      <FileName>Model\Nalog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.RedovanServis" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIIAACAAQAAQgAACAAABAgAAAAAAAEA=</HashCode>
+      <FileName>Model\RedovanServis.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.Revers" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAkAAAAAIIAACACAAAQgAACAAABAoAAAAAAEAA=</HashCode>
+      <FileName>Model\Revers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Model.sysdiagram" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAQAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\sysdiagram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Model.TehnoklinikContext" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAEUQAAQQAEAAgEAAAAAA=</HashCode>
+      <FileName>Model\TehnoklinikContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Model.Uredjaj" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgAAgAIZEACCkAAAABgQQAAQQAEAIgAAAAAAA=</HashCode>
+      <FileName>Model\Uredjaj.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Properties.Resources" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAMAAGAAAAAACABEQAAAQAAAAIAhAAAAQACAIQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Properties.Settings" Collapsed="true">
+    <Position X="3.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAQAgAAAAAAAIAAQAEABAAAAAAABEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Support.KontroleAtributi" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAgAAAAQAAAAAIEAAAAAACAAAAA=</HashCode>
+      <FileName>Support\KontroleEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.Utility.NotifyPropertyObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAQAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\NotifyPropertyObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Utility.NotifyContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\NotifyContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.Utility.RefreshView" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\RefreshView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.AboutView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AboutView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.InventarUnos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\InventarUnos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.KorisnikUnos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\KorisnikUnos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.LoginDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LoginDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MDAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.NalogView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\NalogView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.OptionDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>View\OptionDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.View.UredjajUnos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UredjajUnos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.DeloviViewDataGridControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewControl\DeloviViewDataGridControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.KorisniciViewControls" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewControl\KorisniciViewControls.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.UredjajViewControls" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewControl\UredjajViewControls.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.DijaloziZaUnos.DeoUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABACAAAQAAAAAAAAAAAAAAAAASAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ViewControl\DijaloziZaUnos\DeoUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.DijaloziZaUnos.KorisnikUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABACAAAQAAAAAAAAAAAAAAAAASAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ViewControl\DijaloziZaUnos\KorisnikUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewControl.DijaloziZaUnos.UredjajUC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABACAAAQAAAAAAAAAAAAAAAAASAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ViewControl\DijaloziZaUnos\UredjajUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.DeloviUCViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAQgBABAAIAAAAAAAAQAgEAQAIBAEEAACEAAACA=</HashCode>
+      <FileName>ViewModel\DeloviUCViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tehnoContext" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="uredjaji" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.KorisnikUCViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIgCABQgIgCAAIAgAAAgQAAASkAAENgCAAAwCg=</HashCode>
+      <FileName>ViewModel\KorisnikUCViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.MainWindowViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BJBYACAoAEAAAIkAgICIACAggUAAAA0CiEQAAAAECAA=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.OptionsDialogVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQgAAAIAIAACAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\OptionsDialogVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.UredjajUCViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQgBABAAIAAAAAQAAQAhEAQAARAEEAACEAAACA=</HashCode>
+      <FileName>ViewModel\UredjajUCViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ViewModelLocator" Collapsed="true">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelLocator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ViewModelObject&lt;M&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIAAAAAAAAAAgAAAAAAAAAgAAAAIAAA=</HashCode>
+      <FileName>ViewModel\ViewModelObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.DeoVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgAAAAAIAAAAAAgAAAgAAAAAgAAAgIAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\DeoVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.DostavnicaVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIAAAAAAAAAAgAAAAAAAEAgAAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\DostavnicaVM.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dostavnica" />
+      <Property Name="Model" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.KorisnikVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgAAAAAYAACEgAAAAAgQAAAAEAAAgAAQAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\KorisnikVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.LogKorisnikVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCAgAAAAAYAACBwAAAAAgAAAAAAAACgAAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\LogKorisnikVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.NalogVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgAAAAAIAAAAAAAAAAgAAAAAAAAAgAAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\NalogVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.RedovanServisVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIAAAAQAAAAAgAAAAAAAAAgAAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\RedovanServisVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.ReversVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAgAAAAAIAAAAAAAAAAgAAAACAAAAggAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\ReversVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DemoDiplomski.ViewModel.ModelVM.UredjajVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAgAAAAAIAAAAACAAAAgEAAAABAAAgAAIAAAAA=</HashCode>
+      <FileName>ViewModel\ModelVM\UredjajVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DemoDiplomski.IViewModel&lt;M&gt;" Collapsed="true">
+    <Position X="2" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Utility\IViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

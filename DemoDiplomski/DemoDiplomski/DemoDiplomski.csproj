@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC9EBF33-C3E0-41BD-8F92-550EDFCEBBFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoDiplomski</RootNamespace>
+    <AssemblyName>DemoDiplomski</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Message\EditMode.cs" />
+    <Compile Include="Message\UINavigacija.cs" />
+    <Compile Include="Message\UIPoruka.cs" />
+    <Compile Include="Model\Deo.cs" />
+    <Compile Include="Model\Dostavnica.cs" />
+    <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\LogKorisnik.cs" />
+    <Compile Include="Model\Nalog.cs" />
+    <Compile Include="Model\RedovanServis.cs" />
+    <Compile Include="Model\Revers.cs" />
+    <Compile Include="Model\sysdiagram.cs" />
+    <Compile Include="Model\TehnoklinikModel.cs" />
+    <Compile Include="Model\Uredjaj.cs" />
+    <Compile Include="Model\VandredniServis.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\CrudVMBase.cs" />
+    <Compile Include="Utility\GlavniModalServis.cs" />
+    <Compile Include="Utility\IModalServisUserControl.cs" />
+    <Compile Include="Utility\KontroleAtributi.cs" />
+    <Compile Include="Utility\NotifyContext.cs" />
+    <Compile Include="Utility\RoutedEventTrigger.cs" />
+    <Compile Include="Validation\ValidacijaLogika.cs" />
+    <Compile Include="ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.xaml.cs">
+      <DependentUpon>DijaloziZaUnosUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\DijaloziZaUnos\KorisnickiNalogUC.xaml.cs">
+      <DependentUpon>KorisnickiNalogUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\DijaloziZaUnos\LoginDialog.xaml.cs">
+      <DependentUpon>LoginDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\KorisnickiNalogUCViewModel.cs" />
+    <Compile Include="ViewModel\LogovanjeUCViewModel.cs" />
+    <Compile Include="ViewModel\VMEntitetBase.cs" />
+    <Compile Include="ViewControl\DeloviViewDataGridControl.xaml.cs">
+      <DependentUpon>DeloviViewDataGridControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\DijaloziZaUnos\DeoUC.xaml.cs">
+      <DependentUpon>DeoUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\DijaloziZaUnos\KorisnikUC.xaml.cs">
+      <DependentUpon>KorisnikUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\DijaloziZaUnos\UredjajUC.xaml.cs">
+      <DependentUpon>UredjajUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\KorisniciViewControls.xaml.cs">
+      <DependentUpon>KorisniciViewControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\UredjajViewControls.xaml.cs">
+      <DependentUpon>UredjajViewControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\DeloviUCViewModel.cs" />
+    <Compile Include="ViewModel\KorisnikUCViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\ModelVM\KorisnikVM.cs" />
+    <Compile Include="ViewModel\ModelVM\KorisnickiNalogVM.cs" />
+    <Compile Include="ViewModel\ModelVM\DeoVM.cs" />
+    <Compile Include="ViewModel\ModelVM\DostavnicaVM.cs" />
+    <Compile Include="ViewModel\ModelVM\NalogVM.cs" />
+    <Compile Include="ViewModel\ModelVM\VandredniServisVM.cs" />
+    <Compile Include="ViewModel\ModelVM\ReversVM.cs" />
+    <Compile Include="ViewModel\UredjajUCViewModel.cs" />
+    <Compile Include="ViewModel\ModelVM\UredjajVM.cs" />
+    <Compile Include="ViewModel\ModelVM\RedovanServisVM.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="ViewModel\ViewModelObject.cs" />
+    <Compile Include="View\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OptionDialog.xaml.cs">
+      <DependentUpon>OptionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\IViewModel.cs" />
+    <Compile Include="Utility\RelayCommand.cs" />
+    <Page Include="DictionaryStyleContols.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DeloviViewDataGridControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\DeoUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\KorisnickiNalogUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\KorisnikUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\LoginDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\DijaloziZaUnos\UredjajUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\KorisniciViewControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewControl\UredjajViewControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OptionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Diagram.cd" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\Documentation\Specifikacija funkcionalnosti.pdf" />
+    <None Include="Resources\Documentation\Zavrsni_rad.pdf" />
+    <None Include="Resources\Word\DostavnicaTemplate.dotx" />
+    <None Include="Resources\Word\RadNalogTemplate.dotx" />
+    <None Include="Resources\Word\ReversTemplate.dotx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons\delete1.png" />
+    <Resource Include="Resources\icons\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\image\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Database\Tehnoklinik.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="bin\Debug\Database\Tehnoklinik_log.ldf">
+      <DependentUpon>Tehnoklinik.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icons\word.png" />
+    <Resource Include="Resources\icons\ok2.png" />
+    <Resource Include="Resources\icons\ok1.png" />
+    <Resource Include="Resources\icons\edit.png" />
+    <Resource Include="Resources\icons\edit-icon.png" />
+    <Resource Include="Resources\icons\exit2.png" />
+    <Resource Include="Resources\icons\exit1.png" />
+    <Resource Include="Resources\icons\save_menu.png" />
+    <Resource Include="Resources\icons\open4.png" />
+    <None Include="Resources\open4.png" />
+    <Resource Include="Resources\icons\open3.png" />
+    <Resource Include="Resources\icons\open2.png" />
+    <Resource Include="Resources\icons\open1.png" />
+    <Resource Include="Resources\icons\dodaj0.png" />
+    <Resource Include="Resources\icons\avatar1.png" />
+    <Resource Include="Resources\icons\settings_grey.png" />
+    <Resource Include="Resources\icons\orange_help.png" />
+    <Resource Include="Resources\icons\info.png" />
+    <None Include="Resources\refresh.png" />
+    <Resource Include="Resources\icons\refresh.png" />
+    <Resource Include="Resources\icons\refresh-icon.png" />
+    <Resource Include="Resources\icons\forward-icon.png" />
+    <Resource Include="Resources\icons\backward-icon.png" />
+    <Resource Include="Resources\icons\machine2.png" />
+    <Resource Include="Resources\icons\parts.png" />
+    <Resource Include="Resources\icons\machine3.png" />
+    <Resource Include="Resources\icons\korisnici.png" />
+    <Resource Include="Resources\icons\add6.png" />
+    <Resource Include="Resources\icons\add3.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

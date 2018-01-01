@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DemoDiplomski\ViewControl\DijaloziZaUnos\KorisnikUC.xaml">
+    <Files>
+      <File FileName="DemoDiplomski\ViewModel\ViewModelObject.cs" Line="15" Column="6" />
+      <File FileName="DemoDiplomski\ViewModel\MainWindowViewModel.cs" Line="35" Column="41" />
+      <File FileName="DemoDiplomski\View\MainWindow.xaml" Line="326" Column="32" />
+      <File FileName="DemoDiplomski\View\MainWindow.xaml.cs" Line="65" Column="10" />
+      <File FileName="DemoDiplomski\Model\Deo.cs" Line="76" Column="1" />
+      <File FileName="DemoDiplomski\Model\Dostavnica.cs" Line="19" Column="3" />
+      <File FileName="DemoDiplomski\Model\Korisnik.cs" Line="24" Column="1" />
+      <File FileName="DemoDiplomski\Model\LogKorisnik.cs" Line="17" Column="25" />
+      <File FileName="DemoDiplomski\Model\Nalog.cs" Line="48" Column="14" />
+      <File FileName="DemoDiplomski\Model\RedovanServis.cs" Line="14" Column="32" />
+      <File FileName="DemoDiplomski\Model\Revers.cs" Line="20" Column="25" />
+      <File FileName="DemoDiplomski\Model\Uredjaj.cs" Line="43" Column="1" />
+      <File FileName="DemoDiplomski\App.config" Line="54" Column="82" />
+      <File FileName="DemoDiplomski\ViewModel\KorisnikUCViewModel.cs" Line="190" Column="1" />
+      <File FileName="DemoDiplomski\ViewControl\KorisniciViewControls.xaml" Line="207" Column="20" />
+      <File FileName="DemoDiplomski\Model\sysdiagram.cs" Line="1" Column="1" />
+      <File FileName="DemoDiplomski\ViewModel\ModelVM\KorisnikVM.cs" Line="1" Column="1" />
+      <File FileName="DemoDiplomski\ViewModel\VMEntitetBase.cs" Line="36" Column="10" />
+      <File FileName="DemoDiplomski\ViewControl\DijaloziZaUnos\KorisnikUC.xaml" Line="33" Column="37" />
+      <File FileName="DemoDiplomski\ViewControl\DijaloziZaUnos\KorisnikUC.xaml.cs" Line="38" Column="56" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

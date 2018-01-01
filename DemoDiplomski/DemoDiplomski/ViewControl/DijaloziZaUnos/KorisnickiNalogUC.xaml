@@ -1,0 +1,161 @@
+﻿<UserControl x:Class="DemoDiplomski.ViewControl.DijaloziZaUnos.KorisnickiNalogUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:u="clr-namespace:DemoDiplomski.Utility"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:local="clr-namespace:DemoDiplomski.ViewControl.DijaloziZaUnos"
+             mc:Ignorable="d" 
+             d:DesignHeight="430"
+             d:DesignWidth="450">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding DodajAzurirajNalog}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <UserControl.Resources>
+        <ResourceDictionary Source="/DictionaryStyleContols.xaml"/>
+    </UserControl.Resources>
+    <Border Background="#90000000">
+        <Border BorderBrush="Black" 
+                BorderThickness="2" 
+                CornerRadius="6"
+                Background="AliceBlue"
+                Width="570"
+                Height="380"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <Grid Margin="10">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                    <Grid Background="{TemplateBinding Background}">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              Content="{TemplateBinding Content}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}">
+                                        </ContentPresenter>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="35"/>
+                        <Setter Property="Height" Value="35"/>
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                    <Style TargetType="{x:Type ListBox}">
+                        <Setter Property="Margin" Value="-10,50,0,0"/>
+                    </Style>
+                    <Style TargetType="{x:Type ListView}">
+                        <Setter Property="Margin" Value="-80,50,-30,0"/>
+                        <Setter Property="Width" Value="220"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox Grid.Row="0" 
+                             HorizontalContentAlignment="Stretch"
+                             BorderThickness="0"
+                             SelectedItem="{Binding SelektovaniNalog}"
+                             Background="AliceBlue">
+                        <ListBox.Resources>
+                            <Style TargetType="{x:Type TextBox}">
+                                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                                <Setter Property="Width" Value="150"/>
+                                <Setter Property="Height" Value="25"/>
+                                <Setter Property="Margin" Value="-60,0,0,0"/>
+                                <Style.Triggers>
+                                    <Trigger Property="Validation.HasError" Value="true">
+                                        <Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors).CurrentItem.ErrorContent}"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListBox.Resources>
+                        <u:KontroleAtributi LabelProperty="Ime korisnika: ">
+                            <TextBox x:Name="tbNazivUstanove" Text="{Binding DodajVM.Model.Ime,                                               
+                                                NotifyOnSourceUpdated=True,
+                                                NotifyOnValidationError=True,
+                                                ValidatesOnDataErrors=True,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}"
+                                                />
+                        </u:KontroleAtributi>
+                        <u:KontroleAtributi LabelProperty="Prezime korisnika: ">
+                            <TextBox x:Name="tbLaboratorija" Text="{Binding DodajVM.Model.Prezime,
+                                                NotifyOnSourceUpdated=True,
+                                                NotifyOnValidationError=True,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}"/>
+                        </u:KontroleAtributi>
+                        <u:KontroleAtributi LabelProperty="Korisničko ime: ">
+                            <TextBox x:Name="tbPib" Text="{Binding DodajVM.Model.KorisnickoIme,
+                                                ValidatesOnDataErrors=True,
+                                                NotifyOnSourceUpdated=True,
+                                                NotifyOnValidationError=True,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}"/>
+                        </u:KontroleAtributi>
+                        <u:KontroleAtributi LabelProperty="Lozinka: ">
+                            <TextBox x:Name="tbGrad" Text="{Binding DodajVM.Model.Lozinka,
+                                                ValidatesOnDataErrors=True,
+                                                NotifyOnSourceUpdated=True,
+                                                NotifyOnValidationError=True,
+                                                UpdateSourceTrigger=PropertyChanged,
+                                                Mode=TwoWay}"/>
+                        </u:KontroleAtributi>
+                    </ListBox>
+                    <ListView Grid.Column="1"
+                              ItemsSource="{Binding KorisnickiNalozi}"
+                              SelectedItem="{Binding SelektovaniNalog}"
+                              IsSynchronizedWithCurrentItem="True">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Ime" Width="50" DisplayMemberBinding="{Binding Model.Ime}"/>
+                                <GridViewColumn Header="Prezime" Width="60" DisplayMemberBinding="{Binding Model.Prezime}"/>
+                                <GridViewColumn Header="Korisničko ime" Width="100" DisplayMemberBinding="{Binding Model.KorisnickoIme}"/>
+                            </GridView>
+                        </ListView.View>
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Ažuriraj nalog" Command="{Binding AzurirajPostojeciNalog}">
+                                    <MenuItem.Icon>
+                                        <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/edit-icon.png"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem Header="Obrisi nalog" Command="{Binding ObrisiNalog}">
+                                    <MenuItem.Icon>
+                                        <Image Height="21" Width="21" Source="/DemoDiplomski;component/Resources/icons/delete1.png"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                    </ListView>
+                    <StackPanel Margin="0,20,0,0" Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+                        <Button  Command="{Binding SacuvajKN}">
+                            <StackPanel>
+                                <Image Source="/DemoDiplomski;component/Resources/icons/save.png"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="100,0,0,0" IsCancel="False" Click="Close_Click">
+                            <StackPanel>
+                                <Image Source="/DemoDiplomski;component/Resources/icons/delete1.png"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Border>
+</UserControl>

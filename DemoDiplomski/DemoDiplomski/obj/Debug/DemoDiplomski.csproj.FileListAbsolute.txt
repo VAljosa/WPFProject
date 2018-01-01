@@ -1,0 +1,417 @@
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\MainWindow.baml
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\MainWindow.g.cs
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+c:\users\aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+C:\Users\Aljosa\documents\visual studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\AboutDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\AboutDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\OptionDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\OptionDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\LoginDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\Dialogs\LoginDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2013\Projects\C#2\WPF\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csprojResolveAssemblyReference.cache
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\bin\Debug\Resources\Documentation\Specifikacija funkcionalnosti.pdf
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\InvertarDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\KorisnikDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\UredjajDialog.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\InvertarDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\KorisnikDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\UredjajDialog.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.baml
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_Content.g.cs
+C:\Users\Aljosa\Documents\Visual Studio 2015\Projects\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csprojResolveAssemblyReference.cache
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Resources\Documentation\Specifikacija funkcionalnosti.pdf
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.xml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\InventarUnos.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\KorisnikUnos.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\UredjajUnos.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_Content.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\App.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DictionaryStyleContols.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\InventarUnos.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\KorisnikUnos.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\View\UredjajUnos.baml
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb
+D:\DiplomskiMaterijal\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csprojResolveAssemblyReference.cache
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Resources\Documentation\Specifikacija funkcionalnosti.pdf
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.pdb
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.xml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csprojResolveAssemblyReference.cache
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_Content.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\GeneratedInternalTypeHelper.g.cs
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\App.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DictionaryStyleContols.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\FilterDictionary.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.baml
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+d:\ToshibaData\VisokaICT\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Resources\Documentation\Specifikacija funkcionalnosti.pdf
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.xml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csprojResolveAssemblyReference.cache
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_Content.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\App.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DictionaryStyleContols.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\FilterDictionary.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\LoginDialog.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\NalogView.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.baml
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.CoreCompileInputs.cache
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+D:\Aljosa\Diplomski\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\bin\Debug\Database\Tehnoklinik_log.ldf
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\bin\Debug\Database\Tehnoklinik.mdf
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe.config
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.exe
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\DemoDiplomski.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\EntityFramework.SqlServer.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\System.Windows.Interactivity.xml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnickiNalogUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\LoginDialog.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\AboutView.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\OptionDialog.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\App.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_Content.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.cache
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski_MarkupCompile.lref
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DictionaryStyleContols.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DeloviViewDataGridControl.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DeoUC.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\DijaloziZaUnosUC.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnickiNalogUC.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\KorisnikUC.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\LoginDialog.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\DijaloziZaUnos\UredjajUC.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\KorisniciViewControls.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\ViewControl\UredjajViewControls.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\View\MainWindow.baml
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.g.resources
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.Properties.Resources.resources
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.GenerateResource.Cache
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.csproj.CoreCompileInputs.cache
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.exe
+D:\DiplomskiMaterijal\DemoDiplomskiCodeFirst\DemoDiplomski\DemoDiplomski\obj\Debug\DemoDiplomski.pdb

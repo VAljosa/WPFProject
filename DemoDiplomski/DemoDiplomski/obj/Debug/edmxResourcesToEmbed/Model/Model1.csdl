@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TehnoklinikModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Korisnici_Korisnik">
+    <Key>
+      <PropertyRef Name="IDKorisnik" />
+    </Key>
+    <Property Name="IDKorisnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Naziv_ustanove" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Laboratorija" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Grad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Drzava" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Korisnici_Ponuda" Relationship="Self.FK_Korisnici_Ponuda_Korisnici_Korisnik" FromRole="Korisnici_Korisnik" ToRole="Korisnici_Ponuda" />
+    <NavigationProperty Name="Korisnici_Ugovor" Relationship="Self.FK_Korisnici_Ugovor_Korisnici_Korisnik" FromRole="Korisnici_Korisnik" ToRole="Korisnici_Ugovor" />
+    <NavigationProperty Name="Servis_Uredjaj" Relationship="Self.UredjajKorisnik" FromRole="Korisnici_Korisnik" ToRole="Servis_Uredjaj" />
+  </EntityType>
+  <EntityType Name="Korisnici_Nalog">
+    <Key>
+      <PropertyRef Name="IDRadniNalog" />
+    </Key>
+    <Property Name="IDRadniNalog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sifra" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Predmet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Redovan_servis" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Korisnici_Ponuda">
+    <Key>
+      <PropertyRef Name="IDPonuda" />
+    </Key>
+    <Property Name="IDPonuda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sifra" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pocetni_datum" Type="DateTime" Precision="0" />
+    <Property Name="Krajnji_datum" Type="DateTime" Precision="0" />
+    <Property Name="Predmet" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cena" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IDKorisnik" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Korisnici_Korisnik" Relationship="Self.FK_Korisnici_Ponuda_Korisnici_Korisnik" FromRole="Korisnici_Ponuda" ToRole="Korisnici_Korisnik" />
+    <NavigationProperty Name="Korisnici_Racun" Relationship="Self.FK_Korisnici_Racun_Korisnici_Ponuda" FromRole="Korisnici_Ponuda" ToRole="Korisnici_Racun" />
+  </EntityType>
+  <EntityType Name="Korisnici_Racun">
+    <Key>
+      <PropertyRef Name="IDPonuda" />
+    </Key>
+    <Property Name="Sifra" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cena" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Sifra_radnog_naloga" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDPonuda" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Korisnici_Ponuda" Relationship="Self.FK_Korisnici_Racun_Korisnici_Ponuda" FromRole="Korisnici_Racun" ToRole="Korisnici_Ponuda" />
+  </EntityType>
+  <EntityType Name="Korisnici_Ugovor">
+    <Key>
+      <PropertyRef Name="IDUgovor" />
+    </Key>
+    <Property Name="IDUgovor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sifra" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Predmet" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Pocetni_datum" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Krajnji_datum" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Aktivan" Type="Boolean" Nullable="false" />
+    <Property Name="IDKorisnik" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Korisnici_Korisnik" Relationship="Self.FK_Korisnici_Ugovor_Korisnici_Korisnik" FromRole="Korisnici_Ugovor" ToRole="Korisnici_Korisnik" />
+  </EntityType>
+  <EntityType Name="Login_Korisnik">
+    <Key>
+      <PropertyRef Name="IDLogKorisnik" />
+    </Key>
+    <Property Name="IDLogKorisnik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ime" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Prezime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Uloga" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Korisnicko_ime" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Lozinka" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Lozinka_ponovo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login_Login">
+    <Key>
+      <PropertyRef Name="IDLogin" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDLogin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Servis_Invertar">
+    <Key>
+      <PropertyRef Name="IDInvertar" />
+    </Key>
+    <Property Name="IDInvertar" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sifra" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Delovi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Kolicina" Type="Int32" Nullable="false" />
+    <Property Name="Na_stanju" Type="Boolean" Nullable="false" />
+    <Property Name="Cena" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Servis_Uredjaj" Relationship="Self.Servis_UredjajInvertar" FromRole="Servis_Invertar" ToRole="Servis_Uredjaj" />
+  </EntityType>
+  <EntityType Name="Servis_Uredjaj">
+    <Key>
+      <PropertyRef Name="IDUredjaj" />
+    </Key>
+    <Property Name="IDUredjaj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sifra" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tip" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Opis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Servis_Invertar" Relationship="Self.Servis_UredjajInvertar" FromRole="Servis_Uredjaj" ToRole="Servis_Invertar" />
+    <NavigationProperty Name="Korisnici_Korisnik" Relationship="Self.UredjajKorisnik" FromRole="Servis_Uredjaj" ToRole="Korisnici_Korisnik" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Korisnici_Ponuda_Korisnici_Korisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="1" />
+    <End Role="Korisnici_Ponuda" Type="Self.Korisnici_Ponuda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Korisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Principal>
+      <Dependent Role="Korisnici_Ponuda">
+        <PropertyRef Name="IDKorisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Korisnici_Ugovor_Korisnici_Korisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Korisnici_Ugovor" Type="Self.Korisnici_Ugovor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Korisnik">
+        <PropertyRef Name="IDKorisnik" />
+      </Principal>
+      <Dependent Role="Korisnici_Ugovor">
+        <PropertyRef Name="IDKorisnik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Korisnici_Racun_Korisnici_Ponuda">
+    <End Role="Korisnici_Ponuda" Type="Self.Korisnici_Ponuda" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Korisnici_Racun" Type="Self.Korisnici_Racun" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnici_Ponuda">
+        <PropertyRef Name="IDPonuda" />
+      </Principal>
+      <Dependent Role="Korisnici_Racun">
+        <PropertyRef Name="IDPonuda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Servis_UredjajInvertar">
+    <End Role="Servis_Invertar" Type="Self.Servis_Invertar" Multiplicity="*" />
+    <End Role="Servis_Uredjaj" Type="Self.Servis_Uredjaj" Multiplicity="*" />
+  </Association>
+  <Association Name="UredjajKorisnik">
+    <End Role="Korisnici_Korisnik" Type="Self.Korisnici_Korisnik" Multiplicity="*" />
+    <End Role="Servis_Uredjaj" Type="Self.Servis_Uredjaj" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="TehnoklinikEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Korisnici_Korisnik" EntityType="Self.Korisnici_Korisnik" />
+    <EntitySet Name="Korisnici_Nalog" EntityType="Self.Korisnici_Nalog" />
+    <EntitySet Name="Korisnici_Ponuda" EntityType="Self.Korisnici_Ponuda" />
+    <EntitySet Name="Korisnici_Racun" EntityType="Self.Korisnici_Racun" />
+    <EntitySet Name="Korisnici_Ugovor" EntityType="Self.Korisnici_Ugovor" />
+    <EntitySet Name="Login_Korisnik" EntityType="Self.Login_Korisnik" />
+    <EntitySet Name="Login_Login" EntityType="Self.Login_Login" />
+    <EntitySet Name="Servis_Invertar" EntityType="Self.Servis_Invertar" />
+    <EntitySet Name="Servis_Uredjaj" EntityType="Self.Servis_Uredjaj" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_Korisnici_Ponuda_Korisnici_Korisnik" Association="Self.FK_Korisnici_Ponuda_Korisnici_Korisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="Korisnici_Ponuda" EntitySet="Korisnici_Ponuda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Korisnici_Ugovor_Korisnici_Korisnik" Association="Self.FK_Korisnici_Ugovor_Korisnici_Korisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="Korisnici_Ugovor" EntitySet="Korisnici_Ugovor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Korisnici_Racun_Korisnici_Ponuda" Association="Self.FK_Korisnici_Racun_Korisnici_Ponuda">
+      <End Role="Korisnici_Ponuda" EntitySet="Korisnici_Ponuda" />
+      <End Role="Korisnici_Racun" EntitySet="Korisnici_Racun" />
+    </AssociationSet>
+    <AssociationSet Name="Servis_UredjajInvertar" Association="Self.Servis_UredjajInvertar">
+      <End Role="Servis_Invertar" EntitySet="Servis_Invertar" />
+      <End Role="Servis_Uredjaj" EntitySet="Servis_Uredjaj" />
+    </AssociationSet>
+    <AssociationSet Name="UredjajKorisnik" Association="Self.UredjajKorisnik">
+      <End Role="Korisnici_Korisnik" EntitySet="Korisnici_Korisnik" />
+      <End Role="Servis_Uredjaj" EntitySet="Servis_Uredjaj" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

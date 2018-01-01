@@ -1,0 +1,58 @@
+﻿<Window x:Class="DemoDiplomski.View.InventarUnos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoDiplomski.View"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="InventarUnos" Height="320" Width="320">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Width" Value="136"/>
+            <Setter Property="Height" Value="25"/>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors).CurrentItem.ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="90"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid Grid.Row="0" DataContext="{Binding TekuciDeo}" Margin="0,20,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Margin="5,0,0,0" Content="ID Delovi:"/>
+        <Label Grid.Row="1" Margin="5,5,0,0" Content="Serijski broj:"/>
+        <Label Grid.Row="2" Margin="5,5,0,0" Content="Naziv:"/>
+        <Label Grid.Row="3" Margin="5,5,0,0" Content="Kolicina:"/>
+        <Label Grid.Row="4" Margin="5,5,0,0" Content="Na stanju:"/>
+        <Label Grid.Row="5" Margin="5,5,0,0" Content="Cena:"/>
+        <TextBox Grid.Column="1" Grid.Row="0"  Width="120" Text="{Binding IDDelovi, ValidatesOnDataErrors=True}"/>
+        <TextBox Grid.Column="1" Grid.Row="1"  Width="120" Text="{Binding S_N, ValidatesOnDataErrors=True}"/>
+        <TextBox Grid.Column="1" Grid.Row="2"  Width="120" Text="{Binding Naziv, ValidatesOnDataErrors=True}"/>
+        <TextBox Grid.Column="1" Grid.Row="3"  Width="120" Text="{Binding Kolicina}"/>
+        <CheckBox Grid.Column="1" Grid.Row="4"  Width="120" Command="{Binding ValidatesOnDataErrors=True}"/>
+        <TextBox Grid.Column="1" Grid.Row="5"  Width="120" Text="{Binding Cena}"/>
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="Novi deo" Grid.Row="1"  Command="{Binding DodajDeo}"/>
+            <Button Content="Sačuvaj" Grid.Row="1" Margin="7,0,0,0" Command="{Binding Sacuvaj}"/>
+            <Button Content="Izbrisi" Grid.Row="1" Margin="7,0,0,0"  Command="{Binding Izbrisi}"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="DemoDiplomski.View.OptionDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xceed="http://schemas.xceed.com/wpf/xaml/toolkit"
+        WindowStartupLocation="CenterScreen"
+        Title="Personalizacija" Height="300" Width="300">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button IsDefault="True" x:Name="btnOK" Content="OK" Width="{Binding ElementName=btnCancel, Path=ActualWidth}" Click="btnOK_Click"/>
+            <Button Content="Cancel" IsCancel="True"/>
+        </StackPanel>
+        <TabControl Margin="10" Padding="10">
+            <TabItem Header="Opste">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Prikazi toolBar: "/>
+                    <CheckBox x:Name="chbToolBar" IsChecked="True" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Boja editora">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Komponente: " Grid.Row="0" Grid.Column="0"/>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Foreground Color:"/>
+                    <xceed:ColorPicker x:Name="clpDisplayForegroundColor" SelectedColor="{Binding ColorForeground}" Grid.Row="1" Grid.Column="1"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="Background Color:"/>
+                    <xceed:ColorPicker x:Name="clpDisplayBackgroundColor" SelectedColor="{Binding ColorBackground}" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
